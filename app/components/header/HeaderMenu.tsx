@@ -18,7 +18,7 @@ export default function HeaderMenu() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed text-white w-full">
+    <header className="fixed text-white w-full bg-[rgba(0,0,0,0.08)]">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-full items-center justify-between p-6 lg:px-8 bg-transparent"
@@ -35,36 +35,31 @@ export default function HeaderMenu() {
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon aria-hidden="true" className="size-6" />
+            <Bars3Icon aria-hidden="true" className="size-6 text-white" />
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <NavLink href="tarsas">
-            <div>Társasjáték</div>
-            <div className="ml-5">Coaching</div>
+          {[
+            { href: "tarsas", label: "Társasjáték" },
+            { href: "d20", label: "D20" },
+            { href: "szabadban", label: "Szabadban" },
+            { href: "onthesup", label: "On the Sup" },
+            { href: "verses", label: "Verses" },
+            { href: "zenes", label: "Zenés" },
+            { href: "rolam", label: "Rólam" },
+            { href: "jelentkezem", label: "Jelentkezem" },
+          ].map((item) => (
+            <NavLink key={item.href} href={item.href}>
+              <div>{item.label}</div>
+              <div className="ml-5 opacity-40">Coaching</div>
+            </NavLink>
+          ))}
+          <NavLink href="jelentkezem">
+            <div>Rólam</div>
           </NavLink>
-          <NavLink href="d20">
-            <div>D20</div>
-            <div className="ml-5">Coaching</div>
+          <NavLink href="rolam">
+            <div>Jelentkezem</div>
           </NavLink>
-          <NavLink href="szabadban">
-            <div>Szabadban</div>
-            <div className="ml-5">Coaching</div>
-          </NavLink>
-          <NavLink href="onthesup">
-            <div>On the Sup</div>
-            <div className="ml-5">Coaching</div>
-          </NavLink>
-          <NavLink href="verses">
-            <div>Verses</div>
-            <div className="ml-5">Coaching</div>
-          </NavLink>
-          <NavLink href="zenes">
-            <div>Zenés</div>
-            <div className="ml-5">Coaching</div>
-          </NavLink>
-          <NavLink href="rolam">Rólam</NavLink>
-          <NavLink href="jelentkezem">Jelentkezem</NavLink>
         </PopoverGroup>
       </nav>
       <Dialog
