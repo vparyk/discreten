@@ -18,7 +18,7 @@ export default function HeaderMenu() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed text-white w-full bg-[rgba(0,0,0,0.08)]">
+    <header className="fixed text-white w-full bg-[rgba(0,0,0,0.08)] z-100">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-full items-center justify-between p-6 lg:px-8 bg-transparent"
@@ -46,8 +46,6 @@ export default function HeaderMenu() {
             { href: "onthesup", label: "On the Sup" },
             { href: "verses", label: "Verses" },
             { href: "zenes", label: "Zenés" },
-            { href: "rolam", label: "Rólam" },
-            { href: "jelentkezem", label: "Jelentkezem" },
           ].map((item) => (
             <NavLink key={item.href} href={item.href}>
               <div>{item.label}</div>
