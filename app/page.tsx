@@ -28,6 +28,8 @@ export default function Home() {
             <div className="bg-[url(/img/sup.jpg)] bg-cover h-full bg-[30%]"></div>
           </div>
         </div>
+
+        <section className="h-screen">Teszt</section>
       </main>
       <footer></footer>
     </div>

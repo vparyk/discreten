@@ -1,24 +1,31 @@
 "use client";
 
-import { useState } from "react";
-import {
-  Dialog,
-  DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-} from "@headlessui/react";
+import { useState, useEffect } from "react";
+import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import NavLink from "./NavLink";
 
 export default function HeaderMenu() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setShowMenu(true);
+      } else {
+        setShowMenu(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="fixed text-white w-full bg-[rgba(0,0,0,0.08)] z-100">
+    <header
+      className={`fixed text-white w-full bg-[rgba(0,0,0,0.08)] z-50 transition-opacity duration-300 group `}
+    >
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-full items-center justify-between p-6 lg:px-8 bg-transparent"
@@ -38,25 +45,34 @@ export default function HeaderMenu() {
             <Bars3Icon aria-hidden="true" className="size-6 text-white" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          {[
-            { href: "tarsas", label: "Társasjáték" },
-            { href: "d20", label: "D20" },
-            { href: "szabadban", label: "Szabadban" },
-            { href: "onthesup", label: "On the Sup" },
-            { href: "verses", label: "Verses" },
-            { href: "zenes", label: "Zenés" },
-          ].map((item) => (
-            <NavLink key={item.href} href={item.href}>
-              <div>{item.label}</div>
-              <div className="ml-5 opacity-40">Coaching</div>
-            </NavLink>
-          ))}
+        <PopoverGroup className="hidden lg:flex lg:gap-x-12 items-center">
+          <div
+            className={`lg:flex lg:gap-x-12 transition-transform duration-300 ${
+              showMenu
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 -translate-y-full group-hover:opacity-100 group-hover:translate-y-0"
+            }`}
+          >
+            {[
+              { href: "tarsas", label: "Társasjáték" },
+              { href: "d20", label: "D20" },
+              { href: "szabadban", label: "Szabadban" },
+              { href: "onthesup", label: "On the Sup" },
+              { href: "verses", label: "Verses" },
+              { href: "zenes", label: "Zenés" },
+            ].map((item) => (
+              <NavLink key={item.href} href={item.href}>
+                <div>{item.label}</div>
+                <div className="ml-5 opacity-40">Coaching</div>
+              </NavLink>
+            ))}
+          </div>
+
           <NavLink href="jelentkezem">
             <div>Rólam</div>
           </NavLink>
           <NavLink href="rolam">
-            <div>Jelentkezem</div>
+            <div className="underline">Jelentkezem</div>
           </NavLink>
         </PopoverGroup>
       </nav>
@@ -84,38 +100,6 @@ export default function HeaderMenu() {
               <span className="sr-only">Close menu</span>
               <XMarkIcon aria-hidden="true" className="size-6" />
             </button>
-          </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Features
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Company
-                </a>
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
-              </div>
-            </div>
           </div>
         </DialogPanel>
       </Dialog>
