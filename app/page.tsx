@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import NavLink from "./components/header/NavLink";
+import MainBanner from "./components/MainBanner";
 
 export default function Home() {
   return (
@@ -52,14 +53,7 @@ export default function Home() {
                 </NavLink>
               </div>
             </div>
-            <div className="relative bg-[url(/img/reten.jpg)] bg-cover h-screen lg:h-1/2 lg:bg-bottom order-first lg:order-none flex items-end justify-end group">
-              <div className="bg-black/40 text-white p-6 shadow-lg text-center mb-15">
-                <h2 className="text-2xl lg:text-2xl text-right italic">
-                  Kreatív coaching eszközökkel
-                  <br /> a korlátokon túlra...
-                </h2>
-              </div>
-            </div>
+            <MainBanner />
           </div>
           <div className="relative lg:w-1/4 h-[50vh] lg:h-screen group">
             <div className="absolute inset-0 bg-black opacity-50"></div>

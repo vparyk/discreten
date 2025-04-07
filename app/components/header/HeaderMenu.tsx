@@ -68,10 +68,10 @@ export default function HeaderMenu() {
             ))}
           </div>
 
-          <NavLink href="jelentkezem">
+          <NavLink href="rolam">
             <div>Rólam</div>
           </NavLink>
-          <NavLink href="rolam">
+          <NavLink href="jelentkezem">
             <div className="underline">Jelentkezem</div>
           </NavLink>
         </PopoverGroup>
