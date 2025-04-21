@@ -9,3 +9,7 @@
     font-size: var(--text-xl);
   }
 }
+
+@theme {
+  --color-rosemary: #41615c;
+}
