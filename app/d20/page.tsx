@@ -1,6 +1,6 @@
 import SideboxrBanner from "../components/SideboxBanner";
 
-export default function Rolam() {
+export default function D20() {
   return (
     <div>
       <main>
