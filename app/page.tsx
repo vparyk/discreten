@@ -57,7 +57,7 @@ export default function Home() {
           </div>
           <div className="relative lg:w-1/4 h-[50vh] lg:h-screen group">
             <div className="absolute inset-0 bg-black opacity-50"></div>
-            <div className="bg-[url(/img/sup.jpg)] bg-cover h-full bg-[30%]">
+            <div className="bg-[url(/img/sup.webp)] bg-cover h-full bg-[30%]">
               <NavLink
                 href="szabadban"
                 className="relative z-10 text-white top-3/5 transform -translate-y-1/2 ml-5 block lg:opacity-0 group-hover:opacity-100 transition-opacity duration-500"
