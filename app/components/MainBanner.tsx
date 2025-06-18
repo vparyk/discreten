@@ -34,7 +34,7 @@ export default function MainBanner() {
       <div
         className="absolute inset-0 bg-cover bg-center transition-opacity duration-700"
         style={{
-          backgroundImage: "url(/img/reten.jpg)",
+          backgroundImage: "url(/img/reten.webp)",
         }}
       ></div>
 
