@@ -30,9 +30,12 @@ export default function MainBanner() {
 
   return (
     <div className="relative h-screen lg:h-1/2 lg:bg-bottom order-first lg:order-none flex items-end justify-end group">
+      {/* Sötétítés az egész képen */}
+      <div className="absolute inset-0 bg-black opacity-25 z-10 hidden lg:block"></div>
+
       {/* Első kép */}
       <div
-        className="absolute inset-0 bg-cover bg-center transition-opacity duration-700"
+        className="absolute inset-0 bg-cover bg-center transition-opacity duration-700 z-0"
         style={{
           backgroundImage: "url(/img/reten.webp)",
         }}
@@ -40,7 +43,7 @@ export default function MainBanner() {
 
       {/* Második kép */}
       <div
-        className="absolute inset-0 bg-cover bg-center transition-opacity duration-700"
+        className="absolute inset-0 bg-cover bg-center transition-opacity duration-700 z-0"
         style={{
           backgroundImage: "url(/img/reten-nincs-korlat.webp)",
           opacity: 1 - scrollOpacity,
@@ -48,7 +51,7 @@ export default function MainBanner() {
       ></div>
 
       {/* Tartalom */}
-      <div className="relative bg-black/40 text-white p-6 shadow-lg text-center mb-15">
+      <div className="relative bg-black/40 text-white p-6 shadow-lg text-center mb-15 z-20">
         <h2 className="text-2xl lg:text-2xl text-right italic">
           Kreatív coaching eszközökkel
           <br /> a korlátokon túlra...
