@@ -1,4 +1,3 @@
-import MainBanner from "../components/MainBanner";
 import SideboxrBanner from "../components/SideboxBanner";
 
 export default function Rolam() {

@@ -9,7 +9,7 @@ export default function Home() {
       <main>
         <div className="w-full flex lg:flex-row flex-col gap-0.5">
           <div className="relative h-[50vh] lg:w-1/4  lg:h-screen">
-            <div className="relative bg-[url(/img/gitar.jpg)] bg-cover h-full bg-[30%] group">
+            <div className="relative bg-[url(/img/szoba.webp)] bg-cover h-full bg-[60%] group">
               <div className="absolute inset-0 bg-black opacity-40"></div>
               <NavLink
                 href="zenes"
