@@ -52,11 +52,8 @@ export default function MainBanner() {
   }, []);
 
   return (
-    <div className="h-screen">
-      <div className="relative h-2/3 lg:h-1/2 lg:bg-bottom order-first lg:order-none flex items-end justify-end group">
-        {/* Sötétítés az egész képen */}
-        <div className="absolute inset-0 bg-black opacity-25 z-10 hidden lg:block"></div>
-
+    <div className="h-screen flex flex-col lg:flex-row relative overflow-hidden ">
+      <div className="relative h-2/3 lg:h-screen  w-full flex  group flex items-end justify-end group">
         {/* Első kép */}
         <div
           className="absolute inset-0 bg-cover bg-center transition-opacity duration-700 z-0"
@@ -73,24 +70,54 @@ export default function MainBanner() {
             opacity: 1 - scrollOpacity,
           }}
         ></div>
+
+        {/* Tartalom */}
+        <div className="relative  bg-black/60 lg:bg-neutral-800/70 text-white p-6 shadow-lg text-center mb-15 z-20 rounded-bl-3xl">
+          <h3 className="lg:hidden text-lg lg:text-2xl text-right italic">
+            Kreatív coaching eszközökkel
+            <br /> a korlátokon túlra...
+          </h3>
+        </div>
+
+        <div
+          className={`hidden lg:flex absolute inset-0 bg-black/30 items-center px-16`}
+        >
+          <div
+            className={`text-white max-w-xl flex flex-col h-full justify-center`}
+          >
+            <h1 className="text-4xl font-bold drop-shadow-lg">
+              Life és Business Coaching
+            </h1>
+            <p className="mt-4 text-lg drop-shadow">
+              Játék, mozgás, művészet alapú <br />
+              eszközhasználattal
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div className="h-1/3 flex flex-col">
+      <div className="h-1/3 lg:h-screen flex flex-col lg:flex-col">
         {/* Mobil szöveges blokk a kép alatt */}
-        <div className="h-full 2xl:hidden bg-white py-6 pb-8 px-4 text-center">
-          <h1 className="text-xl font-bold text-gray-900">
-            Life és business coaching
+        <div className="h-full lg:hidden bg-white py-6 pb-8 px-4 text-center">
+          <h1 className="text-xl font-bold text-gray-900 leading-tight lg:hidden">
+            Life és Business <br /> Coaching
           </h1>
           <p className="mt-3 text-gray-700">
-            Művész, játték és mozgás alapű <br /> eszközhasználattal
+            Játék, mozgás, művészet alapú <br />
+            eszközhasználattal
           </p>
         </div>
 
         {/* Szövegdoboz – jobbra desktopon, alul mobilon */}
-        <div className="w-full h-full bg-rosemary p-10 flex items-center text-white justify-center 2xl:justify-start 2xl:border-l-2 relative">
-          <div className="space-y-4 text-base leading-relaxed max-w-lg flex flex-col gap-6 m-4 text-center">
-            Kreatív coaching eszközökkel
-            <br /> a korlátokon túlra...
+        <div className="w-full h-full bg-rosemary p-10 flex flex-col items-center text-white justify-center 2xl:justify-start lg:border-l-2 relative xl:w-[300px] 2xl:w-[320px]">
+          <div className="flex flex-col flex-1 justify-center">
+            <h3 className="hidden lg:block text-lg lg:text-2xl text-right italic">
+              Kreatív coaching eszközökkel
+              <br /> a korlátokon túlra...
+            </h3>
+          </div>
+          <div className="space-y-4 text-base leading-relaxed max-w-lg flex flex-col gap-6 m-4 text-center font-semibold uppercase">
+            Kategóriák
           </div>
           {/* Lefelé mutató fehér kacsacsőr ikon */}
           <button
