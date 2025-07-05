@@ -108,7 +108,7 @@ export default function MainBanner() {
       </div>
 
       {/* Szövegdoboz – jobbra desktopon, alul mobilon */}
-      <div className="lg:min-h-screen bg-rosemary p-10 pt-6 flex flex-col items-center text-white justify-center 2xl:justify-start lg:border-l-2 relative xl:w-[300px] 2xl:w-[320px]">
+      <div className="lg:min-h-screen bg-rosemary p-10 pt-6 flex flex-col items-center text-white justify-center 2xl:justify-start lg:border-l-2 relative lg:w-[320px]">
         <div className="flex flex-col flex-1 justify-center">
           <h3 className="hidden lg:block text-lg lg:text-2xl text-right italic">
             Kreatív coaching eszközökkel
