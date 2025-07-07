@@ -8,6 +8,14 @@ import NavLink from "./NavLink";
 export default function HeaderMenu() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const menuItems = [
+    { href: "tarsas", label: "Társasjáték" },
+    { href: "d20", label: "D20" },
+    { href: "szabadban", label: "Szabadban" },
+    { href: "onthesup", label: "On the Sup" },
+    { href: "verses", label: "Verses" },
+    { href: "zenes", label: "Zenés" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,14 +61,7 @@ export default function HeaderMenu() {
                 : "opacity-0 -translate-y-full group-hover:opacity-100 group-hover:translate-y-0"
             }`}
           >
-            {[
-              { href: "tarsas", label: "Társasjáték" },
-              { href: "d20", label: "D20" },
-              { href: "szabadban", label: "Szabadban" },
-              { href: "onthesup", label: "On the Sup" },
-              { href: "verses", label: "Verses" },
-              { href: "zenes", label: "Zenés" },
-            ].map((item) => (
+            {menuItems.map((item) => (
               <NavLink key={item.href} href={item.href}>
                 <div>{item.label}</div>
                 <div className="ml-5 opacity-40">Coaching</div>
@@ -95,6 +96,27 @@ export default function HeaderMenu() {
               <span className="sr-only">Close menu</span>
               <XMarkIcon aria-hidden="true" className="size-6" />
             </button>
+          </div>
+          <div className="flex flex-col mt-13 justify-between h-[78vh] sm:mt-20 sm:h-[50vh]">
+            {menuItems.map((item) => (
+              <NavLink key={item.href} href={item.href}>
+                <div className="text-center text-base ">
+                  {item.label}{" "}
+                  <div className="block opacity-40 text-center text-xs">
+                    Coaching
+                  </div>
+                </div>
+              </NavLink>
+            ))}
+            <NavLink href="rolam ">
+              <div className="text-center text-base">Rólam</div>
+            </NavLink>
+
+            <NavLink href="jelentkezem">
+              <div className="underline text-center text-lg uppercase tracking-wider">
+                Jelentkezem
+              </div>
+            </NavLink>
           </div>
         </DialogPanel>
       </Dialog>
