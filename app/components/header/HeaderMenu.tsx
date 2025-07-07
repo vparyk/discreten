@@ -32,7 +32,9 @@ export default function HeaderMenu() {
 
   return (
     <header
-      className={`fixed text-white w-full bg-[rgba(0,0,0,0.08)] z-50 transition-opacity duration-300 group `}
+      className={`fixed text-white w-full z-50 transition-opacity duration-300 group bg-[rgba(0,0,0,0.17)] ${
+        showMenu ? "bg-[rgba(0,0,0,0.25)]" : "lg:bg-[rgba(0,0,0,0.08)]"
+      }`}
     >
       <nav
         aria-label="Global"
@@ -58,7 +60,7 @@ export default function HeaderMenu() {
             className={`xl:flex xl:gap-x-12 transition-transform duration-300 ${
               showMenu
                 ? "opacity-100 translate-y-0"
-                : "opacity-0 -translate-y-full group-hover:opacity-100 group-hover:translate-y-0"
+                : "opacity-0 -translate-y-full group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:translate-y-0"
             }`}
           >
             {menuItems.map((item) => (

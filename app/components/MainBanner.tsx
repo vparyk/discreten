@@ -72,7 +72,7 @@ export default function MainBanner() {
         ></div>
 
         {/* Tartalom */}
-        <div className="relative lg:hidden bg-black/60 lg:bg-neutral-800/70 text-white p-6 shadow-lg text-center mb-15 z-20 rounded-bl-3xl">
+        <div className="relative lg:hidden bg-black/60 lg:bg-neutral-800/70 text-white p-6 shadow-lg text-center mb-15 z-0 rounded-bl-3xl">
           <h3 className="text-lg lg:text-2xl text-right italic font-semibold">
             Kreatív coaching eszközökkel
             <br /> a korlátokon túlra...
