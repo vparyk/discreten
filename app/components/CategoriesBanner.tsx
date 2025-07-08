@@ -9,7 +9,7 @@ export default function CategoriesBanner({}) {
         <div className="lg:w-1/3 w-full flex flex-col gap-0.5">
           {/* Társasjáték & Szerepjáték */}
           <div className="relative h-[35vh] lg:h-[50vh] group overflow-hidden">
-            <div className="bg-[url(/img/grund2.png)] bg-cover h-full flex items-end justify-between">
+            <div className="bg-[url(/img/grund2.webp)] bg-cover h-full flex items-end justify-between">
               <div className="absolute inset-0 bg-black opacity-50"></div>
               <BannerNavLink
                 href="tarsas"

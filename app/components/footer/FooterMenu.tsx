@@ -1,11 +1,15 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import NavLink from "../header/NavLink";
 
 export default function FooterMenu() {
+  const handleAttendClick = () => {
+    const el = document.getElementById("jelentkezem");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <footer className="text-white w-full bg-ground border-t-2">
       <nav
@@ -17,8 +21,11 @@ export default function FooterMenu() {
             <span className="font-bold">discRéten</span>
           </a>
         </div>
-        <NavLink href="jelentkezem">
-          <div className="underline">Jelentkezem</div>
+
+        <NavLink href="/#jelentkezem">
+          <div className="underline" onClick={handleAttendClick}>
+            Jelentkezem
+          </div>
         </NavLink>
       </nav>
     </footer>

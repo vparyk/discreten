@@ -30,6 +30,14 @@ export default function HeaderMenu() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleAttendClick = () => {
+    const el = document.getElementById("jelentkezem");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      setShowMenu(false);
+    }
+  };
+
   return (
     <header
       className={`fixed text-white w-full z-50 transition-opacity duration-300 group bg-[rgba(0,0,0,0.17)] ${
@@ -74,8 +82,10 @@ export default function HeaderMenu() {
           <NavLink href="rolam">
             <div>Rólam</div>
           </NavLink>
-          <NavLink href="jelentkezem">
-            <div className="underline">Jelentkezem</div>
+          <NavLink href="/#jelentkezem">
+            <div className="underline" onClick={handleAttendClick}>
+              Jelentkezem
+            </div>
           </NavLink>
         </PopoverGroup>
       </nav>
@@ -114,8 +124,11 @@ export default function HeaderMenu() {
               <div className="text-center text-base">Rólam</div>
             </NavLink>
 
-            <NavLink href="jelentkezem">
-              <div className="underline text-center text-lg uppercase tracking-wider">
+            <NavLink href="/#jelentkezem">
+              <div
+                className="underline text-center text-lg uppercase tracking-wider"
+                onClick={handleAttendClick}
+              >
                 Jelentkezem
               </div>
             </NavLink>
