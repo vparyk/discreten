@@ -17,8 +17,8 @@ export default function BannerNavLink({
 }: BannerNavLinkProps) {
   // Oldalspecifikus stílusok
   const sideClass = isRight
-    ? "rounded-tl-2xl rounded-bl-2xl border-l-2 border-t-2 border-b-2 border-white"
-    : "rounded-tr-2xl rounded-br-2xl border-r-2 border-t-2 border-b-2 border-white";
+    ? "rounded-bl-2xl border-l-2 border-t-2 border-b-2 border-white"
+    : "rounded-tr-2xl border-r-2 border-t-2 border-b-2 border-white";
 
   return (
     <NavLink

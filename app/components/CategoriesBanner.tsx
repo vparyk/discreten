@@ -14,7 +14,7 @@ export default function CategoriesBanner({}) {
               <BannerNavLink
                 href="tarsas"
                 title="Társasjáték"
-                className="mb-10 lg:mb-24"
+                className="mb-10 lg:mb-24 bg-ground!"
               />
               <BannerNavLink
                 href="d20"
@@ -31,7 +31,7 @@ export default function CategoriesBanner({}) {
               <BannerNavLink
                 href="szabadban"
                 title="Szabadban"
-                className="mb-10 lg:mb-24"
+                className="mb-10 lg:mb-24 bg-ground!"
               />
               <BannerNavLink
                 href="onthesup"
@@ -51,12 +51,12 @@ export default function CategoriesBanner({}) {
                 <BannerNavLink
                   href="klasszikus"
                   title="Klasszikus"
-                  className="mb-4 lg:mb-45"
+                  className="mb-4 lg:mb-45 bg-ground! rounded-br-2xl!"
                 />
                 <BannerNavLink
                   href="verses"
                   title="Verses"
-                  className="mb-4 lg:mb-30"
+                  className="mb-4 lg:mb-30 bg-deep!"
                 />
               </div>
               <BannerNavLink
