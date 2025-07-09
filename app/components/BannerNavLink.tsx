@@ -23,7 +23,7 @@ export default function BannerNavLink({
   return (
     <NavLink
       href={href}
-      className={`relative z-10 text-white p-2.5 lg:p-3 bg-rosemary block transition-transform duration-200 hover:scale-110 focus:scale-110 ${sideClass} ${className}`}
+      className={`relative z-10 text-white p-2.5 lg:p-3 bg-rosemary block transition-transform duration-200 hover:scale-110 focus:scale-110 opacity-90 ${sideClass} ${className}`}
     >
       <div className={`${isRight ? "mr-2 lg:mr-5" : "ml-2 lg:ml-5"}`}>
         <h2 className="text-sm sm:text-base md:text-lg leading-5">
