@@ -40,7 +40,7 @@ export default function HeaderMenu() {
 
   return (
     <header
-      className={`fixed text-white w-full z-50 transition-opacity duration-300 group bg-[rgba(0,0,0,0.16)] hover:bg-deep  hover:border-b-1 ${
+      className={`fixed text-white w-full z-50 transition-opacity duration-300 group bg-[rgba(0,0,0,0.16)] hover:bg-deep hover:border-b-1 hover:z-70 ${
         showMenu ? "bg-[rgba(32,32,32,0.4)]" : "lg:bg-[rgba(0,0,0,0.08)]"
       }`}
     >
