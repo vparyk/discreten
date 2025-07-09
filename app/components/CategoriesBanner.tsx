@@ -49,7 +49,7 @@ export default function CategoriesBanner({}) {
               <div className="absolute inset-0 bg-black opacity-40 lg:opacity-0"></div>
               <div>
                 <BannerNavLink
-                  href="klasszikus"
+                  href="coaching"
                   title="Klasszikus"
                   className="mb-4 lg:mb-45 bg-ground! rounded-br-2xl!"
                 />

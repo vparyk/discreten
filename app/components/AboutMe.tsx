@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <div id="rolam" className="border-t-2 border-white ">
       <SideboxBanner
-        imageUrl="/img/profil.jpg"
+        imageUrl="/img/profil.webp"
         title="Rólam"
         subtitle="Venczel Patrik Márk- webfejlesztő és coach"
       >
@@ -35,7 +35,6 @@ export default function AboutMe() {
           elakadásokkal, döntési helyzetekkel vagy változási igénnyel érkeznek.
         </p>
       </SideboxBanner>
-      <div className="container mx-auto px-4 py-8 flex flex-col gap-8 max-w-6xl"></div>
     </div>
   );
 }
