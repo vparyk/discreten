@@ -14,4 +14,6 @@
   --color-rosemary: #41615c;
   --color-ground: #5f524d;
   --color-deep: #1a3138;
+
+  --breakpoint-3xl: 110rem;
 }

@@ -19,7 +19,7 @@ export default function SideboxBanner({
     <div>
       <div className="flex flex-col 2xl:flex-row w-full">
         {/* Kép arányos megjelenítése */}
-        <div className="w-full lg:h-[85vh] xl:aspect-[4/3] relative 2xl:h-screen xl:h-[85vh]">
+        <div className="w-full lg:h-[85vh] 3xl:aspect-[4/3] relative 2xl:h-screen xl:h-[85vh]">
           <img
             src={imageUrl}
             alt="D20 coaching"
@@ -55,7 +55,7 @@ export default function SideboxBanner({
         </div>
 
         {/* Szövegdoboz – jobbra desktopon, alul mobilon */}
-        <div className="w-full bg-rosemary p-10 flex items-center text-white justify-center 2xl:justify-start 2xl:border-l-2">
+        <div className="w-full bg-rosemary p-10 flex items-center text-white justify-center 2xl:justify-start 2xl:border-l-2 2xl:w-xl 3xl:w-full">
           <div className="space-y-4 text-base leading-relaxed max-w-lg flex flex-col gap-6 m-4">
             {children}
           </div>

@@ -1,5 +1,6 @@
 import MainBanner from "./components/MainBanner";
 import CategoriesBanner from "./components/CategoriesBanner";
+import AboutMe from "./components/AboutMe";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
           </span>
         </div>
         <CategoriesBanner />
+        <AboutMe />
       </main>
       <footer></footer>
     </div>
