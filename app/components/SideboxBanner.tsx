@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type BannerProps = {
   children: React.ReactNode;
   imageUrl: string;
@@ -20,7 +22,8 @@ export default function SideboxBanner({
       <div className="flex flex-col 2xl:flex-row w-full">
         {/* Kép arányos megjelenítése */}
         <div className="w-full lg:h-[85vh] 3xl:aspect-[4/3] relative 2xl:h-screen xl:h-[85vh]">
-          <img
+          <Image
+            fill={true}
             src={imageUrl}
             alt="D20 coaching"
             className="object-cover object-bottom w-full h-full"

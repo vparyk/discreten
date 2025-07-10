@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -30,12 +31,12 @@ export default function NavLink({
   };
 
   return (
-    <a
+    <Link
       href={href}
       onClick={handleClick}
       className={`text-white hover:underline transition-colors text-sm/6 font-semibold ${className}`}
     >
       {children}
-    </a>
+    </Link>
   );
 }

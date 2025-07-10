@@ -1,5 +1,4 @@
 import BannerNavLink from "./BannerNavLink";
-import NavLink from "./header/NavLink";
 
 export default function CategoriesBanner({}) {
   return (

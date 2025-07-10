@@ -1,5 +1,5 @@
 import Container from "./base/Container";
-import Link from "./base/Link";
+import TextLink from "./base/Link";
 import SemiBold from "./base/SemiBold";
 import Tag from "./base/Tag";
 
@@ -16,7 +16,9 @@ export default function Apply() {
       <Tag>Jelentkezés:</Tag>
       <p className="text-center">
         Jelentkezz most a következő email címen:{" "}
-        <Link href="mailto:discreten@gmail.com">discreten@gmail.com</Link>
+        <TextLink href="mailto:discreten@gmail.com">
+          discreten@gmail.com
+        </TextLink>
       </p>
     </Container>
   );
