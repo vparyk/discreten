@@ -60,8 +60,8 @@ export default function Coaching() {
             korlátozott, a coaching ugyanis nem tanácsadás és nem mentorálás.
           </p>
         </SideboxrBanner>
-        <div className="container mx-auto px-4 py-8">
-          <p className="mb-9">
+        <div className="container mx-auto px-4 py-8 flex flex-col gap-8">
+          <p>
             A folyamat során az ügyfél múltbeli tapasztalataira, meglévő
             erősségeire, vagy korábban látott működő mintákra építünk. Ehhez
             vizuális és játékos eszközöket is használok, például
@@ -81,7 +81,7 @@ export default function Coaching() {
             pszichoterápiás folyamatok kínálnak megfelelőbb keretet.
           </p>
         </div>
-        <Apply />
+        <Apply initialSelected="Klasszikus coaching" />
       </main>
       <footer></footer>
     </div>

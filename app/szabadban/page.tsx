@@ -65,7 +65,7 @@ export default function Rolam() {
           </p>
         </SideboxrBanner>
         <Container>
-          <p className="mb-9">
+          <p>
             Mivel az időjárás kiszámíthatatlan, ehhez a lehetőséghez érdemes egy
             beltéri coaching típust is választani, hogy az előre egyeztetett,
             kéthetente megtartott alkalmakat eső esetén is biztosítani tudjuk.
@@ -78,7 +78,7 @@ export default function Rolam() {
             mindketten a saját kedvenc zöld helyünkről becsatlakozva.
           </p>
         </Container>
-        <Apply />
+        <Apply initialSelected="Coaching a szabadban" />
       </main>
       <footer></footer>
     </div>

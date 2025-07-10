@@ -12,7 +12,7 @@ export default function FooterMenu() {
   };
 
   return (
-    <footer className="text-white w-full bg-ground border-t-2">
+    <footer className="text-white w-full bg-ground">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-full items-center justify-between p-6 lg:px-8 bg-transparent"

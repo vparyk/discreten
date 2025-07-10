@@ -68,7 +68,7 @@ export default function Rolam() {
           </p>
         </SideboxrBanner>
         <Container>
-          <p className="mb-5 text-lg">
+          <p className=" text-lg">
             Ez a kreatív coaching típus ideális azok számára, akik:
           </p>
           <ul className="space-y-3 ml-5">
@@ -86,7 +86,7 @@ export default function Rolam() {
             </li>
           </ul>
         </Container>
-        <Apply />
+        <Apply initialSelected="Zenés coaching" />
       </main>
       <footer></footer>
     </div>

@@ -65,7 +65,7 @@ export default function Tarsas() {
             rendszertábla kiváló eszköznek bizonyulnak.
           </p>
         </SideboxrBanner>
-        <Apply />
+        <Apply initialSelected="Társasjáték coaching" />
       </main>
       <footer></footer>
     </div>
