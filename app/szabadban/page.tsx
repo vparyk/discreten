@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: "https://discreten.hu/img/reten.webp",
         width: 1200,
         height: 630,
-        alt: "Szabadtéri coaching a természetben – pokróc a fűben",
+        alt: "Egy rét, fókuszban egy korlát, balra fa, hátul felhők és dombok",
       },
     ],
     locale: "hu_HU",
@@ -41,6 +41,7 @@ export default function Rolam() {
           imageUrl="/img/reten.webp"
           title="Coaching a szabadban"
           subtitle="5 alkalmas segítő beszélgetés munkahelyi és személyes életbeli elakadások segítésére vízparton vagy természetben"
+          alt="Egy rét, fókuszban egy korlát, balra fa, hátul felhők és dombok"
         >
           <p>
             11 éves korom óta cserkész vagyok, így a természet szeretete már

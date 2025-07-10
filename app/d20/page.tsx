@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: "https://discreten.hu/img/d20.webp",
         width: 1200,
         height: 630,
-        alt: "Szerepjátékos coaching illusztráció – D20 kocka",
+        alt: "Egy 20 oldalú kocka fókuszban háttérben egy kanapéval",
       },
     ],
     locale: "hu_HU",
@@ -42,6 +42,7 @@ export default function D20() {
           imageUrl="/img/d20.webp"
           title="Szerepjátékos coaching"
           subtitle="5 alkalmas segítő beszélgetés munkahelyi és személyes életbeli elakadások segítésére, szerepjáték eszközhasználattal"
+          alt="Egy 20 oldalú kocka fókuszban háttérben egy kanapéval"
         >
           <p>
             A coaching két legfontosabb eszköze a{" "}

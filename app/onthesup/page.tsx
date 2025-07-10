@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: "https://discreten.hu/img/sup.webp",
         width: 1200,
         height: 630,
-        alt: "Coaching SUP deszkán a vízen",
+        alt: "Piros SUP deszka a vízen és úszó növények",
       },
     ],
     locale: "hu_HU",
@@ -41,6 +41,7 @@ export default function OnTheSup() {
           imageUrl="/img/sup.webp"
           title="On The Sup coaching"
           subtitle="5 alkalmas segítő beszélgetés munkahelyi és személyes életbeli elakadások segítésére, a vízen SUP-al lebegve"
+          alt="Piros SUP deszka a vízen és úszó növények"
         >
           <p>
             A szabadtéri coaching egy extrémebb változata, ahol a másfél órás

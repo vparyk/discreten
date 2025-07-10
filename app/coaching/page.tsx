@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         url: "https://discreten.hu/img/szoba2.webp",
         width: 1200,
         height: 630,
-        alt: "Discréten coaching vizuális illusztráció",
+        alt: "Elől egy hatalmas monstera, körülötte sok másik növény, hátul egy kanapé, polcokon társasjátékok",
       },
     ],
     locale: "hu_HU",
@@ -40,6 +40,7 @@ export default function Coaching() {
           imageUrl="/img/szoba2.webp"
           title="Coaching"
           subtitle="5 alkalmas segítő beszélgetés munkahelyi és személyes életbeli elakadások segítésére"
+          alt="Elől egy hatalmas monstera, körülötte sok másik növény, hátul egy kanapé, polcokon társasjátékok"
         >
           <p>
             A coaching egy strukturált, célorientált fejlesztési folyamat, amely

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: "https://discreten.hu/img/verses.webp",
         width: 1200,
         height: 630,
-        alt: "Verses coaching – alkotás és önreflexió kreatív eszközökkel",
+        alt: "Fókuszban egy karakter lap, rajta Edvárd, a bárd. Háttérben növények és polcok",
       },
     ],
     locale: "hu_HU",
@@ -41,6 +41,7 @@ export default function Verses() {
           imageUrl="/img/verses.webp"
           title="Verses coaching"
           subtitle="5 alkalmas segítő beszélgetés munkahelyi és személyes életbeli elakadások segítésére, kreatív verses módszerrel"
+          alt="Fókuszban egy karakter lap, rajta Edvárd, a bárd. Háttérben növények és polcok"
         >
           <p>
             Mint sokan mások, én is korán ráébredtem, milyen felszabadító érzés

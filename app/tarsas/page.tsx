@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: "https://discreten.hu/img/grund2.webp",
         width: 1200,
         height: 630,
-        alt: "Társasjátékos coaching figurák – Cerebria vizuális eszközei",
+        alt: "Cerebria társasjáték színes figurái egy asztalon, háttérben egy kert sok fával",
       },
     ],
     locale: "hu_HU",
@@ -45,6 +45,7 @@ export default function Tarsas() {
           caption={
             <Caption text="Figurák a Mindclash Games Cerebria társasjátékból, melyek coaching eszközként is kiválóan alkalmazhatóak." />
           }
+          alt="Cerebria társasjáték színes figurái egy asztalon, háttérben egy kert sok fával"
         >
           <p>
             <strong>

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: "https://discreten.hu/img/szoba.webp",
         width: 1200,
         height: 630,
-        alt: "Zenés coaching – önismeret hangokon keresztül",
+        alt: "Egy szoba, középen egy gitár, hátul kanapé, polcokon társasjátékok, elől asztal, jobbra babzsákfotel",
       },
     ],
     locale: "hu_HU",
@@ -41,6 +41,7 @@ export default function Rolam() {
           imageUrl="/img/szoba.webp"
           title="Zenes coaching"
           subtitle="5 alkalmas segítő beszélgetés munkahelyi és személyes életbeli elakadások segítésére kreatív hangszeres eszközhasználattal"
+          alt="Egy szoba, középen egy gitár, hátul kanapé, polcokon társasjátékok, elől asztal, jobbra babzsákfotel"
         >
           <p>
             A zenés coaching során a hangszert nem hagyományos módon, hanem

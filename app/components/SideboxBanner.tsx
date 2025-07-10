@@ -5,6 +5,7 @@ type BannerProps = {
   imageUrl: string;
   title: string;
   subtitle: string;
+  alt: string;
   titlePosition?: "first-third" | "center";
   caption?: React.ReactNode; // Opcionális képaláírás
 };
@@ -14,6 +15,7 @@ export default function SideboxBanner({
   imageUrl,
   title,
   subtitle,
+  alt,
   titlePosition = "center",
   caption,
 }: BannerProps) {
@@ -25,7 +27,7 @@ export default function SideboxBanner({
           <Image
             fill={true}
             src={imageUrl}
-            alt="D20 coaching"
+            alt={alt}
             className="object-cover object-bottom w-full h-full"
           />
           {/* Szöveg a képen – csak desktopon látható */}
