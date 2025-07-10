@@ -20,6 +20,7 @@ type ApplyFormProps = {
 
 export default function ApplyForm({ initialSelected }: ApplyFormProps) {
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [problem, setProblem] = useState("");
   const [selectedTags, setSelectedTags] = useState<string[]>(
     initialSelected && categories.includes(initialSelected)
@@ -43,13 +44,14 @@ export default function ApplyForm({ initialSelected }: ApplyFormProps) {
     const res = await fetch("/api/submit-form", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, problem, categories: selectedTags }),
+      body: JSON.stringify({ name, email, problem, categories: selectedTags }),
     });
 
     setSubmitting(false);
     if (res.ok) {
       setSuccess(true);
       setName("");
+      setEmail("");
       setProblem("");
       setSelectedTags(initialSelected ? [initialSelected] : []);
     } else {
@@ -86,6 +88,18 @@ export default function ApplyForm({ initialSelected }: ApplyFormProps) {
               value={name}
               required
               onChange={(e) => setName(e.target.value)}
+              className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-3 focus:ring-rosemary"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium mb-1 text-ground">
+              Email
+            </label>
+            <input
+              type="email"
+              value={email}
+              required
+              onChange={(e) => setEmail(e.target.value)}
               className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-3 focus:ring-rosemary"
             />
           </div>
