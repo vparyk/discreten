@@ -1,6 +1,37 @@
 import Apply from "../components/Apply";
 import Container from "../components/base/Container";
 import SideboxrBanner from "../components/SideboxBanner";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Verses coaching – Discréten",
+  description:
+    "5 alkalmas coaching folyamat kreatív verses módszerrel. A hős útja történetív mentén dolgozunk, hogy alkotáson keresztül találj megoldásokat személyes és munkahelyi elakadásokra.",
+  openGraph: {
+    title: "Verses coaching – Discréten",
+    description:
+      "A kreatív írás és a coaching ötvözete. Témák, fordulatok, megoldások és versek, amelyek évekkel később is emlékeztetnek saját erődre. Ideális azoknak, akik szeretik az önreflexiót és az alkotást.",
+    url: "https://discreten.hu/coaching/verses",
+    siteName: "Discréten",
+    images: [
+      {
+        url: "https://discreten.hu/img/verses.webp",
+        width: 1200,
+        height: 630,
+        alt: "Verses coaching – alkotás és önreflexió kreatív eszközökkel",
+      },
+    ],
+    locale: "hu_HU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Verses coaching – Alkotás az önismeret szolgálatában",
+    description:
+      "Kreatív írás, coaching és belső fejlődés ötvözete. A hős útján haladva versek segítenek feldolgozni és megérteni az elakadásokat. Fedezd fel az alkotásban rejlő erőt.",
+    images: ["https://discreten.hu/img/verses.webp"],
+  },
+};
 
 export default function Verses() {
   return (

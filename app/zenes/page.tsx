@@ -1,6 +1,37 @@
 import Apply from "../components/Apply";
 import Container from "../components/base/Container";
 import SideboxrBanner from "../components/SideboxBanner";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Zenés coaching – Discréten",
+  description:
+    "5 alkalmas coaching folyamat, ahol a handdrum és más hangszerek vizualizációs eszközként segítik a belső világod felfedezését. Zenei előképzettség nélkül is működik!",
+  openGraph: {
+    title: "Zenés coaching – Discréten",
+    description:
+      "Kreatív, meditatív coaching forma handdrum hangszerrel. A zene mint eszköz segíti a mélyebb önreflexiót, megértést és lelki egyensúlyt. 2025 szeptemberétől indul, előjelentkezés már lehetséges.",
+    url: "https://discreten.hu/coaching/zenes",
+    siteName: "Discréten",
+    images: [
+      {
+        url: "https://discreten.hu/img/szoba.webp",
+        width: 1200,
+        height: 630,
+        alt: "Zenés coaching – önismeret hangokon keresztül",
+      },
+    ],
+    locale: "hu_HU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Zenés coaching – Hangokon át az önismerethez",
+    description:
+      "A zene mint önreflexiós és vizualizációs eszköz segít felfedezni belső világodat. Meditatív hangulat, handdrum, és támogatott önismereti út – zenés coaching Discréten módra.",
+    images: ["https://discreten.hu/img/szoba.webp"],
+  },
+};
 
 export default function Rolam() {
   return (

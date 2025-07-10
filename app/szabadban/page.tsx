@@ -1,6 +1,37 @@
 import Apply from "../components/Apply";
 import Container from "../components/base/Container";
 import SideboxrBanner from "../components/SideboxBanner";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Coaching a szabadban – Természetközeli támogatás Discréten módra",
+  description:
+    "5 alkalmas coaching folyamat a természetben: vízparton, erdei ösvényeken vagy parkokban, ahol a friss levegő és nyugodt környezet támogatja az önreflexiót és tisztánlátást.",
+  openGraph: {
+    title: "Coaching a szabadban – Discréten",
+    description:
+      "Szabadtéri coaching vízparton vagy természetes környezetben. A friss levegő és a mozgás elősegítik a gondolatok rendezését, miközben támogatást kapsz elakadásaid feldolgozásában.",
+    url: "https://discreten.hu/coaching/szabadban",
+    siteName: "Discréten",
+    images: [
+      {
+        url: "https://discreten.hu/img/reten.webp",
+        width: 1200,
+        height: 630,
+        alt: "Szabadtéri coaching a természetben – pokróc a fűben",
+      },
+    ],
+    locale: "hu_HU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Coaching a szabadban – Természetes keretek között",
+    description:
+      "Személyes és munkahelyi elakadások feldolgozása parkban, vízparton vagy erdei sétán – a természet erejével támogatva.",
+    images: ["https://discreten.hu/img/reten.webp"],
+  },
+};
 
 export default function Rolam() {
   return (

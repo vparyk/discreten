@@ -1,5 +1,36 @@
 import Apply from "../components/Apply";
 import SideboxrBanner from "../components/SideboxBanner";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Discréten Coaching – Támogatás változáshoz és fejlődéshez",
+  description:
+    "Személyes és szakmai elakadások oldása mozgás-, játék- és művészetalapú coaching eszközökkel, támogató jelenléttel, struktúrával.",
+  openGraph: {
+    title: "Discréten Coaching",
+    description:
+      "A coaching során kérdésekkel és figyelemmel támogatott folyamatban fedezheted fel a saját megoldásaidat, akár fantáziavilág, természet, mozgás vagy szerepjáték segítségével.",
+    url: "https://discreten.hu/coaching",
+    siteName: "Discréten",
+    images: [
+      {
+        url: "https://discreten.hu/img/szoba2.webp",
+        width: 1200,
+        height: 630,
+        alt: "Discréten coaching vizuális illusztráció",
+      },
+    ],
+    locale: "hu_HU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Discréten Coaching",
+    description:
+      "Fókuszált figyelemmel, strukturált kérdésekkel és kreatív eszközökkel támogatott coaching folyamatok – a változásért.",
+    images: ["https://discreten.hu/img/szoba2.webp"],
+  },
+};
 
 export default function Coaching() {
   return (

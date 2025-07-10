@@ -1,6 +1,37 @@
 import Apply from "../components/Apply";
 import Caption from "../components/Caption";
 import SideboxrBanner from "../components/SideboxBanner";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Társasjáték coaching – Discréten",
+  description:
+    "5 alkalmas coaching folyamat társasjátékos és rendszertáblás eszközhasználattal. Perspektívaváltás, vizualizáció és mélyebb megértés játékos keretek között.",
+  openGraph: {
+    title: "Társasjáték coaching – Discréten",
+    description:
+      "A társasjáték mint vizualizációs eszköz segít új szemszögből ránézni elakadásaidra. Használjuk a figurákat, kártyákat és rendszertáblát, hogy kreatívan támogassuk az önismereti folyamatot.",
+    url: "https://discreten.hu/coaching/tarsasjatek",
+    siteName: "Discréten",
+    images: [
+      {
+        url: "https://discreten.hu/img/grund2.webp",
+        width: 1200,
+        height: 630,
+        alt: "Társasjátékos coaching figurák – Cerebria vizuális eszközei",
+      },
+    ],
+    locale: "hu_HU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Társasjáték coaching – Perspektívaváltás játékosan",
+    description:
+      "A coaching során játékos eszközökkel támogatjuk a problémák újraértelmezését. A társasjátékok figurái és kártyái segítenek a mélyebb belső munkában.",
+    images: ["https://discreten.hu/img/grund2.webp"],
+  },
+};
 
 export default function Tarsas() {
   return (

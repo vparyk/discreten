@@ -1,6 +1,37 @@
 import Apply from "../components/Apply";
 import Container from "../components/base/Container";
 import SideboxrBanner from "../components/SideboxBanner";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "On The Sup Coaching – Szabadtéri coaching a vízen",
+  description:
+    "5 alkalmas coaching folyamat SUP-on, a természetben. Munkahelyi és személyes elakadások támogatása mozgással és jelenléttel – nyáron, jó időben.",
+  openGraph: {
+    title: "On The Sup Coaching – Szabadtéri coaching a vízen",
+    description:
+      "5 alkalmas coaching folyamat SUP-on, a természetben. Munkahelyi és személyes elakadások támogatása mozgással és jelenléttel – nyáron, jó időben.",
+    url: "https://discreten.hu/onthesup",
+    siteName: "Discréten",
+    images: [
+      {
+        url: "https://discreten.hu/img/sup.webp",
+        width: 1200,
+        height: 630,
+        alt: "Coaching SUP deszkán a vízen",
+      },
+    ],
+    locale: "hu_HU",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "On The Sup Coaching – Szabadtéri coaching SUP-pal",
+    description:
+      "Munkahelyi és személyes elakadások támogatása a természet közelségében, SUP deszkán lebegve – 5 alkalmas coaching folyamat.",
+    images: ["https://discreten.hu/img/sup.webp"],
+  },
+};
 
 export default function OnTheSup() {
   return (
@@ -9,7 +40,7 @@ export default function OnTheSup() {
         <SideboxrBanner
           imageUrl="/img/sup.webp"
           title="On The Sup coaching"
-          subtitle="5 alkalmas segítő beszélgetés munkahelyi és személyes életbeli elakadások segítésére, a vizen SUP-al lebegve"
+          subtitle="5 alkalmas segítő beszélgetés munkahelyi és személyes életbeli elakadások segítésére, a vízen SUP-al lebegve"
         >
           <p>
             A szabadtéri coaching egy extrémebb változata, ahol a másfél órás
