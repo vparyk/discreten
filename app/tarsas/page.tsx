@@ -48,7 +48,7 @@ export default function Tarsas() {
         >
           <p>
             <strong>
-              A társasjáték a coachingban, mint vizualizációs eszköz
+              A társasjáték a coachingban mint vizualizációs eszköz
             </strong>{" "}
             van jelen. Főleg a játékok kártyáinak képeit használjuk, hogy az
             érzések kifejezésének könnyítésére, vagy a figurákat, hogy
@@ -61,7 +61,7 @@ export default function Tarsas() {
             <strong>figyelem és a kérdések </strong>, utóbbiak során sűrűn
             használjuk a kontextusváltást, hogy másképp lássunk rá az adott
             problémákra és lehetőségekre, melyre a társasjátékok és a
-            rendszertábla kiválló eszköznek bizonyulnak.
+            rendszertábla kiváló eszköznek bizonyulnak.
           </p>
         </SideboxrBanner>
         <Apply />

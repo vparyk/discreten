@@ -1,5 +1,6 @@
 import Apply from "../components/Apply";
 import Container from "../components/base/Container";
+import SemiBold from "../components/base/SemiBold";
 import SideboxrBanner from "../components/SideboxBanner";
 import { Metadata } from "next";
 
@@ -43,11 +44,10 @@ export default function D20() {
           subtitle="5 alkalmas segítő beszélgetés munkahelyi és személyes életbeli elakadások segítésére, szerepjáték eszközhasználattal"
         >
           <p>
-            <strong>
-              A coaching két legfontosabb eszköze a figyelem és a kérdések
-            </strong>
-            , utóbbiak során sűrűn használjuk a kontextusváltást, hogy másképp
-            lássunk rá az adott problémákra és lehetőségekre.
+            A coaching két legfontosabb eszköze a{" "}
+            <strong>figyelem és a kérdések</strong>, utóbbiak során sűrűn
+            használjuk a kontextusváltást, hogy másképp lássunk rá az adott
+            problémákra és lehetőségekre.
           </p>
 
           <p>
@@ -69,14 +69,16 @@ export default function D20() {
             Ahogy Dungeons and Dragons szerepjátékokban megalkotott karakterek
             is a saját életünkben tapasztalthoz képest messze más problémákba
             ütköznek a kalandjaik során, úgy az elképzelt életünk felé lépdelve
-            is új kihívásokba ütközhetünk, melyre a döntési mérleg coaching
-            eszköz használatával jóval előre felkészülhetünk.
+            is új kihívásokba ütközhetünk, melyre a{" "}
+            <SemiBold>döntési mérleg</SemiBold> coaching eszköz használatával
+            jóval előre felkészülhetünk.
           </p>
           <p>
             A beszélgetések mellett ebben a kategóriában, apróbb
             szerepjátékokból megismert játékos elemet is felhasználunk, mint az
-            ikonikus 20 oldalú kocka, és a vizualizációs módszerek segítségével
-            mesés kontextusban közelítünk valóságos problémák megoldásaihoz.
+            ikonikus <SemiBold>20 oldalú kocka</SemiBold>, és a vizualizációs
+            módszerek segítségével mesés kontextusban közelítünk valóságos
+            problémák megoldásaihoz.
           </p>
         </Container>
         <Apply />

@@ -67,7 +67,7 @@ export default function Rolam() {
           <p className="mb-9">
             Mivel az időjárás kiszámíthatatlan, ehhez a lehetőséghez érdemes egy
             beltéri coaching típust is választani, hogy az előre egyeztetett,
-            kétheti rendszerességű alkalmakat eső esetén is biztosítani tudjuk.
+            kéthetente megtartott alkalmakat eső esetén is biztosítani tudjuk.
           </p>
           <p>
             Az ország távolabbi pontjain élők számára is szeretném elérhetővé

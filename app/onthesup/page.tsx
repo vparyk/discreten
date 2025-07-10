@@ -49,7 +49,7 @@ export default function OnTheSup() {
 
           <p>
             A természet közelsége és a mozgás segítenek fejben megérkezni, hogy
-            azután a<strong> víztükrön lebegve</strong>, a supon egymás felé
+            azután a<strong> víztükrön lebegve</strong>, a SUP-on egymás felé
             fordulva, a hagyományos kereteket tartva egy minőségi coaching
             alkalom jöhessen létre.
           </p>
@@ -65,9 +65,9 @@ export default function OnTheSup() {
             magukat a víz közelségében.
           </p>
           <p>
-            Kombináld a kategóriákat! Emellé a kategóra mellé érdemes egy
+            Kombináld a kategóriákat! Emellé a kategória mellé érdemes egy
             beltéri opciót is választani, hogy rossz idő esetén is meg tudjuk
-            tartani két hetenként az üléseket.
+            tartani kéthetente az üléseket.
           </p>
         </Container>
         <Apply />

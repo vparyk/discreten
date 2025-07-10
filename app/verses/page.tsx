@@ -45,20 +45,20 @@ export default function Verses() {
           <p>
             Mint sokan mások, én is korán ráébredtem, milyen felszabadító érzés
             magamból <strong>kiírni a mélyebb érzelmeket </strong>, de csak
-            később vettem észre, hogy amikor a karaktereim karaktereim eljutnak
-            egy megoldásig, az rám is sokkal pozitívabban hat.
+            később vettem észre, hogy amikor a karaktereim eljutnak egy
+            megoldásig, az rám is sokkal pozitívabban hat.
           </p>
 
           <p>
             Később a tanulmányaim is megerősítették ezt a szemléletet, hiszen a
-            a segítő szakmák egyik alapelve, hogy az ügyfelet előre mozdítsuk,
-            ne csupán teret adjunk az érzelmek heti szintű kiáradásának.
+            segítő szakmák egyik alapelve, hogy az ügyfelet előre mozdítsuk, ne
+            csupán teret adjunk az érzelmek heti szintű kiáradásának.
           </p>
 
           <p>
             Ez a kategória igazi csemege lehet azoknak, akik szívesen töltik az
-            idejüket <strong>kreatív tevékenységgekkel </strong> az önfejlesztés
-            szerete mellet.
+            idejüket <strong>kreatív tevékenységekkel </strong> az önfejlesztés
+            szeretete mellet.
           </p>
         </SideboxrBanner>
         <Container>
@@ -82,9 +82,9 @@ export default function Verses() {
             és évekkel később is visszavezethet az elhatározásokhoz.
           </p>
           <p>
-            Kombináld a kategóriákat! Emellé a kategóra mellé érdemes egy
+            Kombináld a kategóriákat! Emellé a kategória mellé érdemes egy
             beltéri opciót is választani, hogy rossz idő esetén is meg tudjuk
-            tartani két hetenként az üléseket.
+            tartani kéthetente az üléseket.
           </p>
 
           <p>
