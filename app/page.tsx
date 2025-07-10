@@ -7,11 +7,11 @@ import BannerTitle from "./components/BannerTitle";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "discRéten - Life és Business Coaching",
+  title: "discRéten – Life és Business Coaching",
   description:
     "Játék, mozgás és művészet alapú coaching eszközökkel támogatott önismereti és fejlődési folyamatok.",
   openGraph: {
-    title: "discRéten Life és Business Coaching",
+    title: "discRéten – Life és Business Coaching",
     description:
       "Játék, mozgás és művészet alapú coaching eszközökkel támogatott önismereti és fejlődési folyamatok.",
     url: "https://discreten.hu",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "discRéten Life és Business Coaching",
+    title: "discRéten – Life és Business Coaching",
     description:
       "Játék, mozgás és művészet alapú coaching eszközökkel támogatott önismereti és fejlődési folyamatok.",
     images: ["https://discreten.hu/img/reten.webp"],

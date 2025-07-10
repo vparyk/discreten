@@ -8,7 +8,6 @@ const categories = [
   "Társasjáték coaching",
   "Coaching a szabadban",
   "D20 coaching",
-
   "On the SUP coaching",
   "Verses coaching",
   "Zenés coaching",

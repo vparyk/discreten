@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Személyes és szakmai elakadások oldása mozgás-, játék- és művészetalapú coaching eszközökkel, támogató jelenléttel, struktúrával.",
   openGraph: {
-    title: "discRéten Coaching",
+    title: "discRéten – Coaching",
     description:
       "A coaching során kérdésekkel és figyelemmel támogatott folyamatban fedezheted fel a saját megoldásaidat, akár fantáziavilág, természet, mozgás vagy szerepjáték segítségével.",
     url: "https://discreten.hu/coaching",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "discRéten Coaching",
+    title: "discRéten – Coaching",
     description:
       "Fókuszált figyelemmel, strukturált kérdésekkel és kreatív eszközökkel támogatott coaching folyamatok – a változásért.",
     images: ["https://discreten.hu/img/szoba2.webp"],
