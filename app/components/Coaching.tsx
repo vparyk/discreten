@@ -1,15 +1,19 @@
+import Apply from "./Apply";
 import BannerTitle from "./BannerTitle";
+import Container from "./base/Container";
+import SemiBold from "./base/SemiBold";
 
 export default function Coaching() {
   return (
     <div>
       <BannerTitle id="coaching">Mi az a coaching? </BannerTitle>
 
-      <div className="container mx-auto px-4 py-8 flex flex-col gap-8 max-w-6xl">
+      <Container className="max-w-xl!">
         <p>
           A coaching egy támogató beszélgetéssorozat, amely segít rálátni
-          elakadásokra, és megtalálni a saját, működő megoldásaidat akár a
-          magánéletben, akár a munkahelyi kihívások terén.
+          elakadásokra, és megtalálni a saját, működő megoldásaidat akár a{" "}
+          <SemiBold>magánéletben</SemiBold>, akár a{" "}
+          <SemiBold>munkahelyi kihívások</SemiBold> terén.
         </p>
         <p>
           A fókusz mindig a jelenen és a jövőn van: célokat tűzünk ki, és a
@@ -25,7 +29,9 @@ export default function Coaching() {
           Ideális eszköz lehet kisebb elakadások áthidalására, döntési helyzetek
           tisztázására vagy fejlődési irányok megtalálására
         </p>
-      </div>
+      </Container>
+
+      <Apply />
     </div>
   );
 }
