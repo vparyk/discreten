@@ -56,7 +56,7 @@ export default function OnTheSup() {
           </p>
 
           <p>
-            <strong>Ez a kategória, csak nyáron jó idő esetén elérhető.</strong>
+            Ez a kategória, <strong>csak nyáron</strong> jó idő esetén elérhető.
           </p>
         </SideboxrBanner>
         <Container>

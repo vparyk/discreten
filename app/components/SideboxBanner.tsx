@@ -51,13 +51,13 @@ export default function SideboxBanner({
               <p className="mt-4 text-lg drop-shadow">{subtitle}</p>
             </div>
           </div>
-          {/* Képaláírás – opcionálisan megjelenik a kép alatt mobilon */}
-          {caption && (
-            <div className="2xl:hidden block bg-gray-100 text-gray-700 text-center py-4">
-              {caption}
-            </div>
-          )}
         </div>
+        {/* Képaláírás – opcionálisan megjelenik a kép alatt mobilon */}
+        {caption && (
+          <div className="block 2xl:hidden  bg-gray-100 text-gray-700 text-center py-4">
+            {caption}
+          </div>
+        )}
 
         {/* Mobil szöveges blokk a kép alatt */}
         <div className="2xl:hidden bg-white py-6 pb-8 px-4 text-center">
@@ -66,8 +66,8 @@ export default function SideboxBanner({
         </div>
 
         {/* Szövegdoboz – jobbra desktopon, alul mobilon */}
-        <div className="w-full bg-rosemary p-10 flex items-center text-white justify-center 2xl:justify-start 2xl:border-l-2 2xl:w-2xl 3xl:w-full">
-          <div className="space-y-4 text-base leading-relaxed max-w-lg flex flex-col gap-6 m-4">
+        <div className="w-full bg-rosemary p-10 flex items-center text-white justify-center 2xl:justify-start 2xl:border-l-2 2xl:w-2xl 3xl:w-full 2xl:p-9 3xl:p-10">
+          <div className="space-y-4 text-base leading-relaxed max-w-lg flex flex-col gap-6 m-4 2xl:m-0 3xl::m-4">
             {children}
           </div>
         </div>
