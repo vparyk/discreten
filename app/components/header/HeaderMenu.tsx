@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import NavLink from "./NavLink";
+import Link from "next/link";
 
 export default function HeaderMenu() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -49,9 +50,9 @@ export default function HeaderMenu() {
         className="mx-auto flex max-w-full items-center justify-between p-6 2xl:px-8 bg-transparent"
       >
         <div className="flex 2xl:flex-1 mr-8">
-          <a href="/" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="font-bold">discRéten</span>
-          </a>
+          </Link>
         </div>
         <div className="flex 2xl:hidden">
           <button
@@ -107,9 +108,9 @@ export default function HeaderMenu() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-100 w-full overflow-y-auto bg-rosemary px-6 py-6 sm:max-w-full sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5 flex items-center">
+            <Link href="#" className="-m-1.5 p-1.5 flex items-center">
               <span className="text-white font-bold">discRéten</span>
-            </a>
+            </Link>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}

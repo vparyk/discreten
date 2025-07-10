@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import NavLink from "../header/NavLink";
 
 export default function FooterMenu() {
@@ -17,9 +18,9 @@ export default function FooterMenu() {
         className="mx-auto flex max-w-full items-center justify-between p-6 lg:px-8 bg-transparent"
       >
         <div className="flex lg:flex-1 mr-8">
-          <a href="/" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="font-bold">discRéten</span>
-          </a>
+          </Link>
         </div>
 
         <NavLink href="/#jelentkezem">
