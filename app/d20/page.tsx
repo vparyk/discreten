@@ -66,7 +66,7 @@ export default function D20() {
           </p>
         </SideboxrBanner>
         <Container>
-          <p className="mb-9">
+          <p>
             Ahogy Dungeons and Dragons szerepjátékokban megalkotott karakterek
             is a saját életünkben tapasztalthoz képest messze más problémákba
             ütköznek a kalandjaik során, úgy az elképzelt életünk felé lépdelve
@@ -82,7 +82,7 @@ export default function D20() {
             problémák megoldásaihoz.
           </p>
         </Container>
-        <Apply />
+        <Apply initialSelected="D20 coaching" />
       </main>
       <footer></footer>
     </div>

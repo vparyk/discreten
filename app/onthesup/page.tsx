@@ -56,11 +56,11 @@ export default function OnTheSup() {
           </p>
 
           <p>
-            <strong>Ez a kategória, csak nyáron jó idő esetén elérhető.</strong>
+            Ez a kategória, <strong>csak nyáron</strong> jó idő esetén elérhető.
           </p>
         </SideboxrBanner>
         <Container>
-          <p className="mb-9">
+          <p>
             Noha a komfortzónából kiszakadás fontos pontja a fejlődésnek, mégis
             ezt a kategóriát azoknak tudom ajánlani, akik biztonságban érzik
             magukat a víz közelségében.
@@ -71,7 +71,7 @@ export default function OnTheSup() {
             tartani kéthetente az üléseket.
           </p>
         </Container>
-        <Apply />
+        <Apply initialSelected="On the SUP coaching" />
       </main>
       <footer></footer>
     </div>

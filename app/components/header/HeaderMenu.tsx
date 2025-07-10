@@ -117,7 +117,7 @@ export default function HeaderMenu() {
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="size-6" />
+              <XMarkIcon aria-hidden="true" className="size-6 text-white" />
             </button>
           </div>
           <div className="flex flex-col mt-13 justify-between h-[78vh] sm:mt-20 sm:h-[50vh]">

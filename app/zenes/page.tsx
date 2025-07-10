@@ -1,5 +1,6 @@
 import Apply from "../components/Apply";
 import Container from "../components/base/Container";
+import SemiBold from "../components/base/SemiBold";
 import SideboxrBanner from "../components/SideboxBanner";
 import { Metadata } from "next";
 
@@ -68,7 +69,7 @@ export default function Rolam() {
           </p>
         </SideboxrBanner>
         <Container>
-          <p className="mb-5 text-lg">
+          <p className=" text-lg">
             Ez a kreatív coaching típus ideális azok számára, akik:
           </p>
           <ul className="space-y-3 ml-5">
@@ -77,16 +78,16 @@ export default function Rolam() {
               keresztül,
             </li>
             <li>
-              - Kipróbálnák, milyen a coaching zenével vagy improvizatív
-              hangszerekkel,
+              - Kipróbálnák, milyen a <SemiBold>coaching zenével</SemiBold> vagy
+              improvizatív hangszerekkel,
             </li>
             <li>
-              - Keresik a nyugodt, támogató, mégis mélyre vezető önismereti
-              formákat.
+              - Keresik a <SemiBold>nyugodt, támogató,</SemiBold> mégis mélyre
+              vezető önismereti formákat.
             </li>
           </ul>
         </Container>
-        <Apply />
+        <Apply initialSelected="Zenés coaching" />
       </main>
       <footer></footer>
     </div>

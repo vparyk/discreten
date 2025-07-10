@@ -6,7 +6,7 @@ interface BannerTitleProps {
   className?: string;
 }
 
-export default function BennerTitle({
+export default function BannerTitle({
   id,
   children,
   className = "",

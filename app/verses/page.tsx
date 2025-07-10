@@ -112,7 +112,7 @@ export default function Verses() {
             úgyis te magad vagy.
           </p>
         </Container>
-        <Apply />
+        <Apply initialSelected="Verses coaching" />
       </main>
       <footer></footer>
     </div>
