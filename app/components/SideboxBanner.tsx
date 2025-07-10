@@ -8,6 +8,7 @@ type BannerProps = {
   alt: string;
   titlePosition?: "first-third" | "center";
   caption?: React.ReactNode; // Opcionális képaláírás
+  isHeading?: boolean;
 };
 
 export default function SideboxBanner({
@@ -18,7 +19,10 @@ export default function SideboxBanner({
   alt,
   titlePosition = "center",
   caption,
+  isHeading = true,
 }: BannerProps) {
+  const Heading = isHeading ? "h1" : "div";
+
   return (
     <div>
       <div className="flex flex-col 2xl:flex-row w-full">
@@ -41,7 +45,9 @@ export default function SideboxBanner({
                   : "justify-start pt-[22%]"
               }`}
             >
-              <h1 className="text-4xl font-bold drop-shadow-lg">{title}</h1>
+              <Heading className="text-4xl font-bold drop-shadow-lg">
+                {title}
+              </Heading>
               <p className="mt-4 text-lg drop-shadow">{subtitle}</p>
             </div>
           </div>
@@ -55,7 +61,7 @@ export default function SideboxBanner({
 
         {/* Mobil szöveges blokk a kép alatt */}
         <div className="2xl:hidden bg-white py-6 pb-8 px-4 text-center">
-          <h1 className="text-xl font-bold text-gray-900">{title}</h1>
+          <Heading className="text-xl font-bold text-gray-900">{title}</Heading>
           <p className="mt-3 text-gray-700">{subtitle}</p>
         </div>
 

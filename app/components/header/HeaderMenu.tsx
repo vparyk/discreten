@@ -32,7 +32,7 @@ export default function HeaderMenu() {
   }, []);
 
   const handleNavigateClick = (id: string) => {
-    setShowMenu(false);
+    setMobileMenuOpen(false);
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -123,7 +123,10 @@ export default function HeaderMenu() {
           <div className="flex flex-col mt-13 justify-between h-[78vh] sm:mt-20 sm:h-[50vh]">
             {menuItems.map((item) => (
               <NavLink key={item.href} href={item.href}>
-                <div className="text-center text-base ">
+                <div
+                  className="text-center text-base "
+                  onClick={() => handleNavigateClick(item.href)}
+                >
                   {item.label}{" "}
                   <div className="block opacity-40 text-center text-xs">
                     Coaching

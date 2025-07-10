@@ -8,6 +8,7 @@ export default function AboutMe() {
         title="Rólam"
         subtitle="Venczel Patrik Márk- webfejlesztő és coach"
         alt="Férfi profilkép a Szabadság hídnál, Budapesten"
+        isHeading={false}
       >
         <p>
           8 éve dolgozom fejlesztőként, de már a szakmai pályám korai
