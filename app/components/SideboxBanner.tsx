@@ -27,9 +27,9 @@ export default function SideboxBanner({
     <div>
       <div className="flex flex-col 2xl:flex-row w-full">
         {/* Kép arányos megjelenítése */}
-        <div className="w-full lg:h-[85vh] 3xl:aspect-[4/3] relative 2xl:h-screen xl:h-[85vh]">
+        <div className="w-full lg:h-[85vh] aspect-[4/3] 3xl:aspect-[4/3] relative 2xl:h-screen xl:h-[85vh]">
           <Image
-            fill={true}
+            fill
             src={imageUrl}
             alt={alt}
             className="object-cover object-bottom w-full h-full"
