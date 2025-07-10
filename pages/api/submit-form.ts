@@ -1,8 +1,12 @@
+import { NextApiRequest, NextApiResponse } from "next";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async function handler(req: any, res: any) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Csak POST metódus engedélyezett" });
   }
@@ -28,6 +32,6 @@ export default async function handler(req: any, res: any) {
 
     return res.status(200).json({ success: true });
   } catch (e) {
-    return res.status(500).json({ error: "Valami hiba történt" });
+    return res.status(500).json({ error: `A következő hiba történt: ${e}` });
   }
 }
