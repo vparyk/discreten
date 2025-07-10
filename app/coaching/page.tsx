@@ -3,15 +3,15 @@ import SideboxrBanner from "../components/SideboxBanner";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Discréten Coaching – Támogatás változáshoz és fejlődéshez",
+  title: "discRéten Coaching – Támogatás változáshoz és fejlődéshez",
   description:
     "Személyes és szakmai elakadások oldása mozgás-, játék- és művészetalapú coaching eszközökkel, támogató jelenléttel, struktúrával.",
   openGraph: {
-    title: "Discréten Coaching",
+    title: "discRéten Coaching",
     description:
       "A coaching során kérdésekkel és figyelemmel támogatott folyamatban fedezheted fel a saját megoldásaidat, akár fantáziavilág, természet, mozgás vagy szerepjáték segítségével.",
     url: "https://discreten.hu/coaching",
-    siteName: "Discréten",
+    siteName: "discRéten",
     images: [
       {
         url: "https://discreten.hu/img/szoba2.webp",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Discréten Coaching",
+    title: "discRéten Coaching",
     description:
       "Fókuszált figyelemmel, strukturált kérdésekkel és kreatív eszközökkel támogatott coaching folyamatok – a változásért.",
     images: ["https://discreten.hu/img/szoba2.webp"],

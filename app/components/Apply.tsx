@@ -17,7 +17,7 @@ export default function Apply() {
       <p className="text-center">
         Jelentkezz most a következő email címen:{" "}
         <TextLink href="mailto:discreten@gmail.com">
-          discreten@gmail.com
+          discretencoaching@gmail.com
         </TextLink>
       </p>
     </Container>

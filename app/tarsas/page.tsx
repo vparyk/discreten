@@ -4,15 +4,15 @@ import SideboxrBanner from "../components/SideboxBanner";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Társasjáték coaching – Discréten",
+  title: "Társasjáték coaching – discRéten",
   description:
     "5 alkalmas coaching folyamat társasjátékos és rendszertáblás eszközhasználattal. Perspektívaváltás, vizualizáció és mélyebb megértés játékos keretek között.",
   openGraph: {
-    title: "Társasjáték coaching – Discréten",
+    title: "Társasjáték coaching – discRéten",
     description:
       "A társasjáték mint vizualizációs eszköz segít új szemszögből ránézni elakadásaidra. Használjuk a figurákat, kártyákat és rendszertáblát, hogy kreatívan támogassuk az önismereti folyamatot.",
     url: "https://discreten.hu/coaching/tarsasjatek",
-    siteName: "Discréten",
+    siteName: "discRéten",
     images: [
       {
         url: "https://discreten.hu/img/grund2.webp",

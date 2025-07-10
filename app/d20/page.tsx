@@ -5,7 +5,7 @@ import SideboxrBanner from "../components/SideboxBanner";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Szerepjátékos Coaching – Discréten D20",
+  title: "Szerepjátékos Coaching – discRéten D20",
   description:
     "5 alkalmas coaching folyamat, amely fantáziavilágban játszódó szerepjátékos elemekkel segít rálátni a valós problémákra és célokra.",
   openGraph: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "A coaching során egy elképzelt karaktert és világot használunk, hogy új nézőpontból vizsgálhassuk meg elakadásaidat és lehetőségeidet. Játékos, mégis célirányos támogatás.",
     url: "https://discreten.hu/coaching/d20",
-    siteName: "Discréten",
+    siteName: "discRéten",
     images: [
       {
         url: "https://discreten.hu/img/d20.webp",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Szerepjátékos Coaching – Discréten D20",
+    title: "Szerepjátékos Coaching – discRéten D20",
     description:
       "Szerepjátékos eszközökkel támogatott coaching, ahol elképzelt karaktered segít elérni céljaidat – fantáziával és fókuszált kérdésekkel.",
     images: ["https://discreten.hu/img/d20.webp"],

@@ -4,15 +4,15 @@ import SideboxrBanner from "../components/SideboxBanner";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Coaching a szabadban – Természetközeli támogatás Discréten módra",
+  title: "Coaching a szabadban – Természetközeli támogatás discRéten módra",
   description:
     "5 alkalmas coaching folyamat a természetben: vízparton, erdei ösvényeken vagy parkokban, ahol a friss levegő és nyugodt környezet támogatja az önreflexiót és tisztánlátást.",
   openGraph: {
-    title: "Coaching a szabadban – Discréten",
+    title: "Coaching a szabadban – discRéten",
     description:
       "Szabadtéri coaching vízparton vagy természetes környezetben. A friss levegő és a mozgás elősegítik a gondolatok rendezését, miközben támogatást kapsz elakadásaid feldolgozásában.",
     url: "https://discreten.hu/coaching/szabadban",
-    siteName: "Discréten",
+    siteName: "discRéten",
     images: [
       {
         url: "https://discreten.hu/img/reten.webp",

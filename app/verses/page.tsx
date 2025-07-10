@@ -4,15 +4,15 @@ import SideboxrBanner from "../components/SideboxBanner";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Verses coaching – Discréten",
+  title: "Verses coaching – discRéten",
   description:
     "5 alkalmas coaching folyamat kreatív verses módszerrel. A hős útja történetív mentén dolgozunk, hogy alkotáson keresztül találj megoldásokat személyes és munkahelyi elakadásokra.",
   openGraph: {
-    title: "Verses coaching – Discréten",
+    title: "Verses coaching – discRéten",
     description:
       "A kreatív írás és a coaching ötvözete. Témák, fordulatok, megoldások és versek, amelyek évekkel később is emlékeztetnek saját erődre. Ideális azoknak, akik szeretik az önreflexiót és az alkotást.",
     url: "https://discreten.hu/coaching/verses",
-    siteName: "Discréten",
+    siteName: "discRéten",
     images: [
       {
         url: "https://discreten.hu/img/verses.webp",

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "5 alkalmas coaching folyamat SUP-on, a természetben. Munkahelyi és személyes elakadások támogatása mozgással és jelenléttel – nyáron, jó időben.",
     url: "https://discreten.hu/onthesup",
-    siteName: "Discréten",
+    siteName: "discRéten",
     images: [
       {
         url: "https://discreten.hu/img/sup.webp",
