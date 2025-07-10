@@ -1,6 +1,7 @@
 import Container from "./base/Container";
 import Link from "./base/Link";
 import SemiBold from "./base/SemiBold";
+import Tag from "./base/Tag";
 
 export default function Apply() {
   return (
@@ -12,6 +13,7 @@ export default function Apply() {
         együttműködés. Ebben a szakaszban mindkét fél számára adott a lehetőség,
         hogy indoklás nélkül elálljon a folytatástól.
       </p>
+      <Tag>Jelentkezés:</Tag>
       <p className="text-center">
         Jelentkezz most a következő email címen:{" "}
         <Link href="mailto:discreten@gmail.com">discreten@gmail.com</Link>
