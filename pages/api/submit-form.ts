@@ -11,7 +11,7 @@ export default async function handler(
     return res.status(405).json({ error: "Csak POST metódus engedélyezett" });
   }
 
-  const { name, problem, categories } = req.body;
+  const { name, email, problem, categories } = req.body;
 
   try {
     const { error } = await resend.emails.send({
@@ -21,6 +21,7 @@ export default async function handler(
       html: `
         <h2>Új jelentkezés érkezett</h2>
         <p><strong>Név:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
         <p><strong>Elakadás:</strong><br/> ${problem.replace(/\n/g, "<br>")}</p>
         <p><strong>Kategóriák:</strong> ${categories.join(", ")}</p>
       `,
