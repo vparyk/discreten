@@ -16,7 +16,14 @@ export const metadata: Metadata = {
       "Játék, mozgás és művészet alapú coaching eszközökkel támogatott önismereti és fejlődési folyamatok.",
     url: "https://discreten.hu",
     siteName: "discRéten",
-
+    images: [
+      {
+        url: "https://discreten.hu/img/reten.webp",
+        width: 1200,
+        height: 630,
+        alt: "Egy rét, fókuszban egy korlát, balra fa, hátul felhők és dombok",
+      },
+    ],
     locale: "hu_HU",
     type: "website",
   },
@@ -25,6 +32,7 @@ export const metadata: Metadata = {
     title: "discRéten Life és Business Coaching",
     description:
       "Játék, mozgás és művészet alapú coaching eszközökkel támogatott önismereti és fejlődési folyamatok.",
+    images: ["https://discreten.hu/img/reten.webp"],
   },
 };
 
