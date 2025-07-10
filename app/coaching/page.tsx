@@ -1,3 +1,4 @@
+import Apply from "../components/Apply";
 import SideboxrBanner from "../components/SideboxBanner";
 
 export default function Coaching() {
@@ -48,6 +49,7 @@ export default function Coaching() {
             pszichoterápiás folyamatok kínálnak megfelelőbb keretet.
           </p>
         </div>
+        <Apply />
       </main>
       <footer></footer>
     </div>

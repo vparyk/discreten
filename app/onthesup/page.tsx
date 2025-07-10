@@ -1,3 +1,5 @@
+import Apply from "../components/Apply";
+import Container from "../components/base/Container";
 import SideboxrBanner from "../components/SideboxBanner";
 
 export default function OnTheSup() {
@@ -25,7 +27,7 @@ export default function OnTheSup() {
             <strong>Ez a kategória, csak nyáron jó idő esetén elérhető.</strong>
           </p>
         </SideboxrBanner>
-        <div className="container mx-auto px-4 py-8">
+        <Container>
           <p className="mb-9">
             Noha a komfortzónából kiszakadás fontos pontja a fejlődésnek, mégis
             ezt a kategóriát azoknak tudom ajánlani, akik biztonságban érzik
@@ -36,7 +38,8 @@ export default function OnTheSup() {
             beltéri opciót is választani, hogy rossz idő esetén is meg tudjuk
             tartani két hetenként az üléseket.
           </p>
-        </div>
+        </Container>
+        <Apply />
       </main>
       <footer></footer>
     </div>

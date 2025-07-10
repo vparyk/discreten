@@ -1,3 +1,5 @@
+import Apply from "../components/Apply";
+import Container from "../components/base/Container";
 import SideboxrBanner from "../components/SideboxBanner";
 
 export default function Rolam() {
@@ -33,7 +35,7 @@ export default function Rolam() {
             </strong>
           </p>
         </SideboxrBanner>
-        <div className="container mx-auto px-4 py-8">
+        <Container>
           <p className="mb-5 text-lg">
             Ez a kreatív coaching típus ideális azok számára, akik:
           </p>
@@ -51,7 +53,8 @@ export default function Rolam() {
               formákat.
             </li>
           </ul>
-        </div>
+        </Container>
+        <Apply />
       </main>
       <footer></footer>
     </div>

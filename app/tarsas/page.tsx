@@ -1,5 +1,6 @@
-import SideboxrBanner from "../components/SideboxBanner";
+import Apply from "../components/Apply";
 import Caption from "../components/Caption";
+import SideboxrBanner from "../components/SideboxBanner";
 
 export default function Tarsas() {
   return (
@@ -32,6 +33,7 @@ export default function Tarsas() {
             rendszertábla kiválló eszköznek bizonyulnak.
           </p>
         </SideboxrBanner>
+        <Apply />
       </main>
       <footer></footer>
     </div>

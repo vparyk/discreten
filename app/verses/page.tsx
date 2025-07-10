@@ -1,3 +1,5 @@
+import Apply from "../components/Apply";
+import Container from "../components/base/Container";
 import SideboxrBanner from "../components/SideboxBanner";
 
 export default function Verses() {
@@ -28,7 +30,7 @@ export default function Verses() {
             szerete mellet.
           </p>
         </SideboxrBanner>
-        <div className="container mx-auto px-4 py-8 flex flex-col gap-8">
+        <Container>
           <p>
             A verses coachingban a klasszikus „hős útja” történetív mentén
             dolgozunk, amit gyerekkorunk meséiből jól ismerhetünk. Ez a
@@ -36,8 +38,8 @@ export default function Verses() {
           </p>
 
           <p>
-            Egy-egy alkalom során közösen feltérképezünk egy témát: : megnézzük
-            a kihívásokat, a lehetséges fordulatokat és megoldási irányokat. Az
+            Egy-egy alkalom során közösen feltérképezünk egy témát: megnézzük a
+            kihívásokat, a lehetséges fordulatokat és megoldási irányokat. Az
             ülés végére megszületik egy konkrét megoldásötlet, amit az ügyfél
             otthon versbe foglal vizualizációs eszközök segítségével.
           </p>
@@ -77,7 +79,8 @@ export default function Verses() {
             nyilvános szereplésre. Az önismeret útján a legfontosabb közönség
             úgyis te magad vagy.
           </p>
-        </div>
+        </Container>
+        <Apply />
       </main>
       <footer></footer>
     </div>

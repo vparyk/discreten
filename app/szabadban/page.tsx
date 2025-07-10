@@ -1,3 +1,5 @@
+import Apply from "../components/Apply";
+import Container from "../components/base/Container";
 import SideboxrBanner from "../components/SideboxBanner";
 
 export default function Rolam() {
@@ -30,7 +32,7 @@ export default function Rolam() {
             a kategóriát.
           </p>
         </SideboxrBanner>
-        <div className="container mx-auto px-4 py-8">
+        <Container>
           <p className="mb-9">
             Mivel az időjárás kiszámíthatatlan, ehhez a lehetőséghez érdemes egy
             beltéri coaching típust is választani, hogy az előre egyeztetett,
@@ -43,7 +45,8 @@ export default function Rolam() {
             videókapcsolaton keresztül is tarthatunk szabadtéri coachingot,
             mindketten a saját kedvenc zöld helyünkről becsatlakozva.
           </p>
-        </div>
+        </Container>
+        <Apply />
       </main>
       <footer></footer>
     </div>

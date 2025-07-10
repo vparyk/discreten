@@ -1,3 +1,5 @@
+import Apply from "../components/Apply";
+import Container from "../components/base/Container";
 import SideboxrBanner from "../components/SideboxBanner";
 
 export default function D20() {
@@ -31,7 +33,7 @@ export default function D20() {
             felhasználni.
           </p>
         </SideboxrBanner>
-        <div className="container mx-auto px-4 py-8">
+        <Container>
           <p className="mb-9">
             Ahogy Dungeons and Dragons szerepjátékokban megalkotott karakterek
             is a saját életünkben tapasztalthoz képest messze más problémákba
@@ -45,7 +47,8 @@ export default function D20() {
             ikonikus 20 oldalú kocka, és a vizualizációs módszerek segítségével
             mesés kontextusban közelítünk valóságos problémák megoldásaihoz.
           </p>
-        </div>
+        </Container>
+        <Apply />
       </main>
       <footer></footer>
     </div>
