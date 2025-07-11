@@ -182,6 +182,6 @@ export default function ApplyForm({ initialSelected }: ApplyFormProps) {
           )}
         </form>
       )}
-    <div>
+    </div>
   );
 }
