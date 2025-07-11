@@ -18,7 +18,7 @@ export default function TextLink({
   return (
     <Link
       href={href}
-      className={`text-rosemary font-semibold ${className}`}
+      className={`text-rosemary font-semibold underline ${className}`}
       target={target}
       rel={rel}
     >
