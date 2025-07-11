@@ -1,6 +1,6 @@
 export default function Adatkezeles() {
   return (
-    <main className="max-w-3xl mx-auto p-6 text-gray-800">
+    <main className="max-w-3xl mt-8 mx-auto p-6 text-gray-800">
       <h1 className="text-3xl font-bold mb-4">Adatkezelési tájékoztató</h1>
 
       <p className="mb-4">
