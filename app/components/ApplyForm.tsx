@@ -26,6 +26,7 @@ export default function ApplyForm({ initialSelected }: ApplyFormProps) {
       ? [initialSelected]
       : []
   );
+  const [gdprAccepted, setGdprAccepted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
@@ -38,6 +39,11 @@ export default function ApplyForm({ initialSelected }: ApplyFormProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!gdprAccepted) {
+      setError("A jelentkezéshez el kell fogadnod az adatkezelési nyilatkozatot.");
+      setSubmitting(false);
+      return;
+    }
     setSubmitting(true);
 
     const res = await fetch("/api/submit-form", {
@@ -138,6 +144,23 @@ export default function ApplyForm({ initialSelected }: ApplyFormProps) {
               })}
             </div>
           </div>
+          <div className="flex items-start gap-2">
+            <input
+              id="gdpr"
+              type="checkbox"
+              checked={gdprAccepted}
+              onChange={(e) => setGdprAccepted(e.target.checked)}
+              className="mt-1"
+              required
+            />
+            <label htmlFor="gdpr" className="text-sm text-ground">
+              Elfogadom az{" "}
+              <TextLink href="/adatkezeles" className="underline">
+                adatkezelési nyilatkozatot
+              </TextLink>
+              .
+            </label>
+          </div>
           <button
             type="submit"
             disabled={submitting}
@@ -159,6 +182,6 @@ export default function ApplyForm({ initialSelected }: ApplyFormProps) {
           )}
         </form>
       )}
-    </div>
+    <div>
   );
 }
