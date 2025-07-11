@@ -144,7 +144,7 @@ export default function ApplyForm({ initialSelected }: ApplyFormProps) {
               })}
             </div>
           </div>
-          <div className="flex items-start gap-2">
+          <div className="flex items-center gap-2">
             <input
               id="gdpr"
               type="checkbox"
@@ -155,7 +155,7 @@ export default function ApplyForm({ initialSelected }: ApplyFormProps) {
             />
             <label htmlFor="gdpr" className="text-sm text-ground">
               Elfogadom az{" "}
-              <TextLink href="/adatkezeles" className="underline">
+              <TextLink href="/adatkezeles" target="_blank" rel="noopener noreferrer">
                 adatkezelési nyilatkozatot
               </TextLink>
               .
