@@ -2,6 +2,7 @@
 
 import DownArrowIcon from "@/public/img/icon/down-arrow-icon";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function MainBanner() {
   const [scrollOpacity, setScrollOpacity] = useState(1);
@@ -55,21 +56,43 @@ export default function MainBanner() {
     <div className="min-h-screen lg:h-screen flex flex-col lg:flex-row relative overflow-hidden">
       <div className="relative flex-1 min-h-[400px] flex group items-end justify-end">
         {/* Első kép */}
-        <div
-          className="absolute inset-0 bg-cover transition-opacity duration-700 z-0 bg-[position:23%_center] lg:bg-left"
-          style={{
-            backgroundImage: "url(/img/reten.webp)",
-          }}
-        ></div>
+        <div className="absolute inset-0 transition-opacity duration-700 z-0">
+          <Image
+            src="/img/reten-mobile.webp"
+            alt="Mező, dombokkal és égboltal, képen középen egy korláttal"
+            fill
+            className="object-cover object-[23%_center] lg:object-left block sm:hidden"
+            priority
+          />
+          <Image
+            src="/img/reten.webp"
+            alt="Mező, dombokkal és égboltal, képen középen egy korláttal"
+            fill
+            className="object-cover object-[23%_center] lg:object-left hidden sm:block"
+            priority
+          />
+        </div>
 
         {/* Második kép */}
         <div
-          className="absolute inset-0 bg-cover bg-[position:23%_center] lg:bg-left bg-left transition-opacity duration-700 z-0"
-          style={{
-            backgroundImage: "url(/img/reten-nincs-korlat.webp)",
-            opacity: 1 - scrollOpacity,
-          }}
-        ></div>
+          className="absolute inset-0 transition-opacity duration-700 z-0"
+          style={{ opacity: 1 - scrollOpacity }}
+        >
+          <Image
+            src="/img/reten-mobile-nincs-korlat.webp"
+            alt="Mező, dombokkal és égboltal, képről képszerkeztővel eltávolított korláttal"
+            fill
+            className="object-cover object-[23%_center] lg:object-left block sm:hidden"
+            priority
+          />
+          <Image
+            src="/img/reten-nincs-korlat.webp"
+            alt="Mező, dombokkal és égboltal, képről képszerkeztővel eltávolított korláttal"
+            fill
+            className="object-cover object-[23%_center] lg:object-left hidden sm:block"
+            priority
+          />
+        </div>
 
         {/* Tartalom */}
         <div className="relative lg:hidden bg-black/60 lg:bg-neutral-800/70 text-white p-6 shadow-lg text-center mb-15 z-0 rounded-bl-3xl">
@@ -79,12 +102,8 @@ export default function MainBanner() {
           </h3>
         </div>
 
-        <div
-          className={`hidden lg:flex absolute inset-0 bg-black/30 items-center px-16`}
-        >
-          <div
-            className={`text-white max-w-xl flex flex-col h-full justify-center`}
-          >
+        <div className="hidden lg:flex absolute inset-0 bg-black/30 items-center px-16">
+          <div className="text-white max-w-xl flex flex-col h-full justify-center">
             <h1 className="text-4xl font-bold drop-shadow-lg">
               Life és Business Coaching
             </h1>
@@ -107,7 +126,6 @@ export default function MainBanner() {
         </p>
       </div>
 
-      {/* Szövegdoboz – jobbra desktopon, alul mobilon */}
       <div className="lg:min-h-screen bg-rosemary p-10 pt-6 flex flex-col items-center text-white justify-center 2xl:justify-start lg:border-l-2 relative lg:w-[320px]">
         <div className="flex flex-col flex-1 justify-center">
           <h3 className="hidden lg:block text-lg lg:text-2xl text-right italic">
@@ -118,7 +136,6 @@ export default function MainBanner() {
         <div className="space-y-4 text-base leading-relaxed max-w-lg flex flex-col gap-6 m-4 text-center font-semibold uppercase">
           Kategóriák
         </div>
-        {/* Lefelé mutató fehér kacsacsőr ikon */}
         <button
           className={`absolute left-1/2 -translate-x-1/2 bottom-4 flex flex-col items-center group transition-transform duration-300 ${
             scrollOpacity === 0 ? "translate-y-3" : ""

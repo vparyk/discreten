@@ -9,6 +9,7 @@ type BannerProps = {
   titlePosition?: "first-third" | "center";
   caption?: React.ReactNode; // Opcionális képaláírás
   isHeading?: boolean;
+  imgClassName?: string;
 };
 
 export default function SideboxBanner({
@@ -20,6 +21,7 @@ export default function SideboxBanner({
   titlePosition = "center",
   caption,
   isHeading = true,
+  imgClassName = "",
 }: BannerProps) {
   const Heading = isHeading ? "h1" : "div";
 
@@ -32,7 +34,7 @@ export default function SideboxBanner({
             fill
             src={imageUrl}
             alt={alt}
-            className="object-cover object-bottom w-full h-full"
+            className={`object-cover object-bottom w-full h-full ${imgClassName}`}
           />
           {/* Szöveg a képen – csak desktopon látható */}
           <div
