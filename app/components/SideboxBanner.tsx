@@ -69,7 +69,7 @@ export default function SideboxBanner({
 
         {/* Szövegdoboz – jobbra desktopon, alul mobilon */}
         <div className="w-full bg-rosemary p-10 flex items-center text-white justify-center 2xl:justify-start 2xl:border-l-2 2xl:w-2xl 3xl:w-full 2xl:p-9 3xl:p-10">
-          <div className="space-y-4 text-base leading-relaxed max-w-lg flex flex-col gap-6 m-4 2xl:m-0 3xl::m-4">
+          <div className="space-y-4 text-base leading-relaxed max-w-lg flex flex-col gap-6 my-4 xs:m-4 2xl:m-0 3xl:m-4">
             {children}
           </div>
         </div>
