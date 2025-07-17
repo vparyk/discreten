@@ -40,7 +40,9 @@ export default function ApplyForm({ initialSelected }: ApplyFormProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!gdprAccepted) {
-      setError("A jelentkezéshez el kell fogadnod az adatkezelési nyilatkozatot.");
+      setError(
+        "A jelentkezéshez el kell fogadnod az adatkezelési nyilatkozatot."
+      );
       setSubmitting(false);
       return;
     }
@@ -155,7 +157,11 @@ export default function ApplyForm({ initialSelected }: ApplyFormProps) {
             />
             <label htmlFor="gdpr" className="text-sm text-ground">
               Elfogadom az{" "}
-              <TextLink href="/adatkezeles" target="_blank" rel="noopener noreferrer">
+              <TextLink
+                href="https://discreten.hu/adatkezeles"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 adatkezelési nyilatkozatot
               </TextLink>
               .
