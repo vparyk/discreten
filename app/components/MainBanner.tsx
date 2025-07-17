@@ -53,8 +53,8 @@ export default function MainBanner() {
   }, []);
 
   return (
-    <div className="min-h-screen lg:h-screen flex flex-col lg:flex-row relative overflow-hidden">
-      <div className="relative flex-1 min-h-[400px] flex group items-end justify-end">
+    <div className="h-dvh flex flex-col lg:flex-row overflow-hidden">
+      <div className="relative flex-1 h-dvh flex group items-end justify-end">
         {/* Első kép */}
         <div className="absolute inset-0 transition-opacity duration-700 z-0">
           <Image
