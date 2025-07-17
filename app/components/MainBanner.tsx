@@ -31,10 +31,12 @@ export default function MainBanner() {
 
   useEffect(() => {
     const handleScroll = () => {
+      const screenWidth = window.innerWidth;
       const scrollTop = window.scrollY;
       const maxScroll = window.innerHeight; // A teljes képernyő magassága
       const startTransition = maxScroll * 0.05; // 5%-os görgetési távolság
-      const endTransition = maxScroll * 0.5; // 50%-os görgetési távolság
+      const endTransition =
+        screenWidth > 1024 ? maxScroll * 0.8 : maxScroll * 0.3; // 50%-os görgetési távolság
 
       // Számítsd ki az átlátszóságot a 20%-40% közötti tartományban
       if (scrollTop >= startTransition) {
