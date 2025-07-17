@@ -85,14 +85,12 @@ export default function MainBanner() {
             alt="Mező, dombokkal és égboltal, képről képszerkeztővel eltávolított korláttal"
             fill
             className="object-cover object-[23%_center] lg:object-left block sm:hidden"
-            priority
           />
           <Image
             src="/img/reten-nincs-korlat.webp"
             alt="Mező, dombokkal és égboltal, képről képszerkeztővel eltávolított korláttal"
             fill
             className="object-cover object-[23%_center] lg:object-left hidden sm:block"
-            priority
           />
         </div>
 
