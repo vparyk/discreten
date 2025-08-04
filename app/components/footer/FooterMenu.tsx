@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import NavLink from "../header/NavLink";
+import SocialIcons from "../SocialIcons";
 
 export default function FooterMenu() {
   const handleAttendClick = () => {
@@ -23,11 +24,14 @@ export default function FooterMenu() {
           </Link>
         </div>
 
-        <NavLink href="/#jelentkezem">
-          <div className="underline" onClick={handleAttendClick}>
-            Jelentkezem
-          </div>
-        </NavLink>
+        <div className="flex gap-4">
+          <SocialIcons />
+          <NavLink href="/#jelentkezem">
+            <div className="underline" onClick={handleAttendClick}>
+              Jelentkezem
+            </div>
+          </NavLink>
+        </div>
       </nav>
     </footer>
   );

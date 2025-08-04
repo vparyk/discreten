@@ -1,6 +1,4 @@
-import React from "react";
-
-const DownArrowIcon: React.FC = () => {
+export default function DownArrowIcon() {
   return (
     <svg
       className="w-8 h-8 text-white group-hover:scale-110 transition"
@@ -12,6 +10,4 @@ const DownArrowIcon: React.FC = () => {
       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
     </svg>
   );
-};
-
-export default DownArrowIcon;
+}
