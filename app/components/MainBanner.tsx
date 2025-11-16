@@ -1,58 +1,11 @@
 "use client";
 
 import DownArrowIcon from "@/public/img/icon/down-arrow-icon";
-import { useState, useEffect } from "react";
 import Image from "next/image";
+import { useBannerScroll } from "../hooks/useBannerScroll";
 
 export default function MainBanner() {
-  const [scrollOpacity, setScrollOpacity] = useState(1);
-
-  const handleScrollButtonClick = () => {
-    setScrollOpacity(0);
-    setTimeout(() => {
-      const target = window.innerHeight;
-      const duration = 1000;
-      const start = window.scrollY;
-      const startTime = performance.now();
-
-      function animateScroll(now: number) {
-        const elapsed = now - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const ease = 1 - Math.pow(1 - progress, 3);
-        window.scrollTo(0, start + (target - start) * ease);
-        if (progress < 1) {
-          requestAnimationFrame(animateScroll);
-        }
-      }
-
-      requestAnimationFrame(animateScroll);
-    }, 500);
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const screenWidth = window.innerWidth;
-      const scrollTop = window.scrollY;
-      const maxScroll = window.innerHeight; // A teljes képernyő magassága
-      const startTransition = maxScroll * 0.05; // 5%-os görgetési távolság
-      const endTransition =
-        screenWidth > 1024 ? maxScroll * 0.8 : maxScroll * 0.3; // 50%-os görgetési távolság
-
-      // Számítsd ki az átlátszóságot a 20%-40% közötti tartományban
-      if (scrollTop >= startTransition) {
-        const opacity = Math.max(
-          0,
-          1 - (scrollTop - startTransition) / (endTransition - startTransition)
-        );
-        setScrollOpacity(opacity);
-      } else {
-        setScrollOpacity(1); // Teljesen látható az első kép, ha 5% alatt vagyunk
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const { scrollOpacity, handleScrollButtonClick } = useBannerScroll();
 
   return (
     <div className="min-h-screen flex flex-col lg:flex-row overflow-hidden">
